@@ -26,4 +26,4 @@ for col in input_columns:
         ui_inputs.append(gr.Number(label=col))
 
 demo = gr.Interface(fn=predict_loan, inputs=ui_inputs, outputs="text", title="🏦 Smart Bank Loan Predictor")
-demo.launch()
+demo.launch(server_name="0.0.0.0", server_port=10000)
