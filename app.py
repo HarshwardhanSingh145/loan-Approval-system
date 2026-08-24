@@ -7,7 +7,7 @@ model = load_model('loan_model')
 
 # 2. Data load karein (Sirf UI ke dabe banane ke liye)
 # Note: 'loan approval data.csv' aapke actual file ka naam hona chahiye
-df = pd.read_csv("jupyterinstall/loan approval data.csv") 
+df = pd.read_csv("loan approval data.csv") 
 df = df.drop(columns=['Loan_Approved', 'application_id']) 
 input_columns = df.columns
 
